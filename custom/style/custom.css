@@ -30,6 +30,10 @@ h3,h4{
 a{
 	color: crimson !important;
 }
+
+a:hover{
+	color: black !important;	
+}
 .sidebar-section-title{
 	font-size: 1em;
 	font-weight: 300 !important;
