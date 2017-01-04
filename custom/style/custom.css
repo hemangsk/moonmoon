@@ -2,11 +2,14 @@
 	  font-family: Roboto ;
     font-weight: 200;
     color: black !important;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 
 .article-info{
 	font-family: Roboto;
-	font-weight: 100;
+	font-weight: 300;
+	color: gray;
 }
 
 .article-content{
@@ -30,6 +33,9 @@ h3,h4{
 a{
 	color: crimson !important;
 }
+a:hover{
+	color: black !important
+}
 .sidebar-section-title{
 	font-size: 1em;
 	font-weight: 300 !important;
@@ -44,7 +50,7 @@ a{
 	   text-align: center;
     font-weight: 100;
     font-size: 2.5em;
-    color: lightgray;
+    color: gray;
     line-height: 1;
     padding-bottom: 1em;
     padding-top: 1em;

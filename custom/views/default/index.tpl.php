@@ -38,9 +38,9 @@ header('Content-type: text/html; charset=UTF-8');
                     $host = 'from-' . preg_replace('/[^a-zA-Z0-9]/i', '-', $arParsedUrl['host']);
                     ?>
                     <div class="article <?php echo $host; ?>">
-                        <h2 >
+                        <h1>
                             <a class="article-title" href="<?php echo $item->get_permalink(); ?>" title="Go to original place"><?php echo $item->get_title(); ?></a>
-                        </h2>
+                        </h1>
                         <p class="article-info">
 
                             <?php echo ($item->get_author()? $item->get_author()->get_name() : 'Anonymous'); ?>,
