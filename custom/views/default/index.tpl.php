@@ -21,8 +21,9 @@ header('Content-type: text/html; charset=UTF-8');
     </script>
     <div id="page">
         <?php include(__DIR__.'/top.tpl.php'); ?>
-
-        <div id="content">
+    <div class="container-fluid">
+        <div class="row">    
+        <div class="col-md-9">
             <?php if (0 == count($items)) : ?>
                 <div class="article">
                     <h2 class="article-title">
@@ -37,8 +38,8 @@ header('Content-type: text/html; charset=UTF-8');
                     $host = 'from-' . preg_replace('/[^a-zA-Z0-9]/i', '-', $arParsedUrl['host']);
                     ?>
                     <div class="article <?php echo $host; ?>">
-                        <h2 class="article-title">
-                            <a href="<?php echo $item->get_permalink(); ?>" title="Go to original place"><?php echo $item->get_title(); ?></a>
+                        <h2 >
+                            <a class="article-title" href="<?php echo $item->get_permalink(); ?>" title="Go to original place"><?php echo $item->get_title(); ?></a>
                         </h2>
                         <p class="article-info">
 
@@ -64,9 +65,12 @@ header('Content-type: text/html; charset=UTF-8');
                 <?php endforeach; ?>
             <?php endif; ?>
         </div>
+        
+        <div class="col-md-3">
 
         <?php include_once(__DIR__.'/sidebar.tpl.php'); ?>
-
+        </div>
+        </div>
         <?php include(__DIR__.'/footer.tpl.php'); ?>
     </div>
 </body>
